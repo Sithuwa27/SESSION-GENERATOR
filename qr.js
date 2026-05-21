@@ -17,14 +17,12 @@ const { Boom } = require("@hapi/boom");
 const PORT = process.env.PORT ||  5000
 const MESSAGE = process.env.MESSAGE ||  `
 ┌───⭓『
-❒ *WASI-MD*
+❒ *SITHUWA-MD*
 ❒ _NOW DEPLOY IT_
 └────────────⭓
 ┌───⭓
 ❒  • Chat with owner •
-❒ *GitHub:* __https://github.com/WASI-MD_
-❒ *Author:* _wa.me/923192173398_
-❒ *YT:* _https://youtube.com/@wasitech10_
+❒ *GitHub:* __https://github.com/Sithuwa/SITHUWA-MD_
 └────────────⭓
 `
 
@@ -72,7 +70,8 @@ if (fs.existsSync('./auth_info_baileys')) {
 //===========================================================================================
 
           let CREDS = fs.readFileSync(__dirname + '/auth_info_baileys/creds.json')
-          var Scan_Id = Buffer.from(CREDS).toString('base64')
+          // මෙතනින් තමයි ඔයාට අවශ්‍ය SITHUWA-MD;;; කොටස එකතු කරලා Session ID එක හදන්නේ
+          var Scan_Id = "SITHUWA-MD;;;" + Buffer.from(CREDS).toString('base64')
          // res.json({status:true,Scan_Id })
           console.log(`
 ====================  SESSION ID  ==========================                   
